@@ -7,7 +7,7 @@ Calculate ilClasses.$cols.5.$name as "SuperClass"
 
 Do ilClasses.$sort($ref.Name)
 
-Do ilClasses.$cols.$add("StrippedPathName",kCharacter,kSimplechar,$ctask.kCharacterMaxLen)
+Do ilClasses.$cols.$add("StrippedPathName",kCharacter,kSimplechar,100000000)
 
 Calculate ilClasses.$line as 0
 Calculate ilClasses.$smartlist as kTrue
