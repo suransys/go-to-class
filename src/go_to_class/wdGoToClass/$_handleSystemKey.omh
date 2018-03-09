@@ -1,0 +1,19 @@
+If pSystemKey=8
+	Process event and continue (Discard event)
+	Do $cinst.$_modifyMethods()
+	Quit method kTrue
+End If
+
+If pSystemKey=3
+	Process event and continue (Discard event)
+	Do $cinst.$_modifyClass()
+	Quit method kTrue
+End If
+
+If pSystemKey=kReturn|pSystemKey=kEnter
+	Process event and continue (Discard event)
+	Do $cinst.$_editClass()
+	Quit method kTrue
+End If
+
+Quit method kFalse

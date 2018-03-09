@@ -1,0 +1,15 @@
+Do $cinst.$_getLibrary().$classes.$makelist($ref.$name,$ref.$pathname,$ref.$showascheckedout,$ref.$classtype,$ref.$superclass) Returns ilClasses
+Calculate ilClasses.$cols.1.$name as "Name"
+Calculate ilClasses.$cols.2.$name as "PathName"
+Calculate ilClasses.$cols.3.$name as "CheckedOut"
+Calculate ilClasses.$cols.4.$name as "Type"
+Calculate ilClasses.$cols.5.$name as "SuperClass"
+
+Do ilClasses.$sort($ref.Name)
+
+Do ilClasses.$cols.$add("StrippedPathName",kCharacter,kSimplechar,$ctask.kCharacterMaxLen)
+
+Calculate ilClasses.$line as 0
+Calculate ilClasses.$smartlist as kTrue
+
+Do $cinst.$_filterClasses()

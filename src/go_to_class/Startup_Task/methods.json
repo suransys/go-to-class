@@ -1,0 +1,36 @@
+[
+	{
+		"name": "$construct",
+		"ident": 0,
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 1,
+		"order": 16385,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$exectool",
+		"ident": 2,
+		"order": 268451842,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

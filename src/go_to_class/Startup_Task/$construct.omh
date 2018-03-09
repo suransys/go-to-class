@@ -1,0 +1,2 @@
+Do $modes.$installtool(kEnvToolAddOn,"Go To Class",8116,"Opens the Go To Class window to quickly navigate to classes","G")
+Calculate $clib.$isprivate as kTrue

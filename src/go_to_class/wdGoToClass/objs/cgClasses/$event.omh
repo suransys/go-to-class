@@ -1,0 +1,10 @@
+On evDoubleClick
+	Do $cinst.$_editClass()
+	
+On evKey
+	Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
+	If lbSystemKeyHandled=kTrue
+		Quit method
+	End If
+	
+	Process event and continue

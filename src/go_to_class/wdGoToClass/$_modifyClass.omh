@@ -1,0 +1,2 @@
+Calculate lcFullClassName as con($cinst.$_getLibrary().$name,".",ilClasses.Name)
+Modify class {[lcFullClassName]}

@@ -1,0 +1,11 @@
+Do inherited
+
+Do $cinst.$_buildTypes()
+
+Do $libs.$makelist($ref.$name) Returns ilLibraries
+Calculate ilLibraries.$cols.1.$name as "Name"
+Do ilLibraries.$sendall($ref.Name.$assign(low(ilLibraries.Name)))
+
+Calculate ilLibraries.$line as 1
+
+Do $cinst.$_buildClassList()

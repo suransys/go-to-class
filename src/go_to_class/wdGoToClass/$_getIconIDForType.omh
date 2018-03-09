@@ -1,0 +1,2 @@
+Do ilTypes.$search($ref.Description=pcType,1,0,0,0) Returns ilTypes.$line
+Quit method ilTypes.IconID+k32x32

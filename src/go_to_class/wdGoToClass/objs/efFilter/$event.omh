@@ -1,0 +1,35 @@
+On evBefore     ;; Event Parameters - pRow ( Itemreference )
+	
+On evAfter     ;; Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
+	
+On evKey
+	If pSystemKey=kUp
+		If ilClasses.$line>1
+			Calculate ilClasses.$line as ilClasses.$line-1
+			Redraw {cgClasses}
+			Quit method kTrue
+		End If
+	End If
+	
+	If pSystemKey=kDown
+		If ilClasses.$line<ilClasses.$linecount
+			Calculate ilClasses.$line as ilClasses.$line+1
+			Redraw {cgClasses}
+			Quit method kTrue
+		End If
+	End If
+	
+	Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
+	If lbSystemKeyHandled=kTrue
+		Quit method
+	End If
+	
+	Process event and continue
+	
+	Calculate [$cobj.$dataname] as $cobj.$contents
+	
+	If [$cobj.$dataname]=icLastFilter
+		Quit method
+	End If
+	
+	Do $cinst.$_filterClasses()

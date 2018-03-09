@@ -1,0 +1,18 @@
+If isclear(icFilter)&not(isclear(icLastFilter))|ilClasses.$filters.$count()=0
+	Do ilClasses.$unfilter()
+	Do ilClasses.$filter(ilClasses.CheckedOut=kTrue)
+	Calculate icFilter as ""
+Else If isclear(icLastFilter)&not(isclear(icFilter))
+	Do ilClasses.$unfilter()
+	Do ilClasses.$filter(pos(low(icFilter),low(ilClasses.Name))>0,ilClasses.CheckedOut=kTrue)
+Else
+	Do ilClasses.$refilter()
+End If
+
+Calculate icLastFilter as icFilter
+
+If ilClasses.$line=0&ilClasses.$linecount>0
+	Calculate ilClasses.$line as 1
+End If
+
+Redraw
