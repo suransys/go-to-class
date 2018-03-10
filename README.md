@@ -1,7 +1,7 @@
 # go-to-class
 A utility for quickly opening Omnis windows.
 
-![Go to Class](images/go_to_class.gif)
+![Go to Class](images/go_to_class.png)
 
 ## Installation
 1. Download `lib/go_to_class.lbs`
