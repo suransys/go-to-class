@@ -10,6 +10,6 @@ Do ilLibraries.$sendall($ref.Name.$assign(low(ilLibraries.Name)))
 Do ilLibraries.$search($ref.Name=low($clib().$name),1,0,0,0) Returns ilLibraries.$line
 Do ilLibraries.$remove(0)
 
-Calculate ilLibraries.$line as 1
+Calculate ilLibraries.$line as pick(isclear(ciCurrentLibraryLine),ciCurrentLibraryLine,1)
 
 Do $cinst.$_buildClassList()
