@@ -1,11 +1,17 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 19,
+	"internalversion": 24,
 	"designtaskname": "Startup_Task",
 	"nextident": 1032,
 	"lastgroupident": 0,
 	"cvardefs": [
-
+		{
+			"name": "ciCurrentLibraryLine",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		}
 	],
 	"ivardefs": [
 		{
@@ -94,7 +100,7 @@
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2018-03-14 16:48:11",
+		"moddate": "2018-03-26 11:29:41",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
