@@ -5,7 +5,7 @@
 	],
 	"properties": {
 		"extension": false,
-		"ignoreexternal": false,
+		"ignoreexternal": true,
 		"nodebug": false,
 		"userinfo": "",
 		"vcsbuilddate": "",
