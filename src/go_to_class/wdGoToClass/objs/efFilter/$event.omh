@@ -19,9 +19,11 @@ On evKey
 		End If
 	End If
 	
-	Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
-	If lbSystemKeyHandled=kTrue
-		Quit method
+	If ilClasses.$line>0
+		Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
+		If lbSystemKeyHandled=kTrue
+			Quit method
+		End If
 	End If
 	
 	Process event and continue
