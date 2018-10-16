@@ -1,0 +1,5 @@
+If isclear($cclass.$userinfo)
+	Calculate ilLibraries.$line as 1
+Else
+	Do ilLibraries.$search($ref.Name=$cclass.$userinfo,1,0,0,0) Returns ilLibraries.$line
+End If

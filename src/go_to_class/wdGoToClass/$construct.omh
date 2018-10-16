@@ -2,22 +2,12 @@ Do inherited
 
 Do $cinst.$_buildTypes()
 
-Do $libs.$makelist($ref.$name) Returns ilLibraries
-Calculate ilLibraries.$cols.1.$name as "Name"
-Do ilLibraries.$sendall($ref.Name.$assign(low(ilLibraries.Name)))
+Do $cinst.$_listToLowerCase()
 
-;  Exclude the current library
+;  Exclude the current library (go_to_class)
 Do ilLibraries.$search($ref.Name=low($clib().$name),1,0,0,0) Returns ilLibraries.$line
 Do ilLibraries.$remove(0)
 
-If isclear(ciCurrentLibraryLine)
-	If isclear($cclass.$userinfo)
-		Calculate ilLibraries.$line as 1
-	Else
-		Do ilLibraries.$search($ref.Name=$cclass.$userinfo,1,0,0,0) Returns ilLibraries.$line
-	End If
-Else
-	Calculate ilLibraries.$line as ciCurrentLibraryLine
-End If
+Do $cinst.$_setSelectedLibrary()
 
 Do $cinst.$_buildClassList()
