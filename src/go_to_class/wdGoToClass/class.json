@@ -1,17 +1,11 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 53,
+	"internalversion": 54,
 	"designtaskname": "Startup_Task",
 	"nextident": 1033,
 	"lastgroupident": 0,
 	"cvardefs": [
-		{
-			"name": "ciCurrentLibraryLine",
-			"order": 1,
-			"type": "kInteger",
-			"subtype": "k32bitint",
-			"sublen": 0
-		}
+
 	],
 	"ivardefs": [
 		{
@@ -100,7 +94,7 @@
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2018-10-16 14:09:28",
+		"moddate": "2018-10-16 15:19:56",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
@@ -118,7 +112,7 @@
 		"toolbarnames": "",
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
-		"top": 612,
+		"top": 852,
 		"userinfo": "omnihissql",
 		"usesheets": false,
 		"version": "20",
