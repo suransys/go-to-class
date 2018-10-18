@@ -60,9 +60,20 @@
 		]
 	},
 	{
+		"name": "$_listToLowerCase",
+		"ident": 10,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$_buildTypes",
 		"ident": 16,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 
 		],
@@ -73,7 +84,29 @@
 	{
 		"name": "$_changeLibrary",
 		"ident": 7,
-		"order": 5,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setSelectedLibrary",
+		"ident": 3,
+		"order": 7,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_saveSelectedLibrary",
+		"ident": 9,
+		"order": 8,
 		"pvardefs": [
 
 		],
@@ -84,7 +117,7 @@
 	{
 		"name": "$_editClass",
 		"ident": 5,
-		"order": 6,
+		"order": 9,
 		"pvardefs": [
 
 		],
@@ -122,7 +155,7 @@
 	{
 		"name": "$_filterClasses",
 		"ident": 0,
-		"order": 7,
+		"order": 10,
 		"pvardefs": [
 
 		],
@@ -133,7 +166,7 @@
 	{
 		"name": "$_getIconIDForType",
 		"ident": 8,
-		"order": 8,
+		"order": 11,
 		"pvardefs": [
 			{
 				"name": "pcType",
@@ -151,7 +184,7 @@
 	{
 		"name": "$_getLibrary",
 		"ident": 2,
-		"order": 9,
+		"order": 12,
 		"pvardefs": [
 
 		],
@@ -162,7 +195,7 @@
 	{
 		"name": "$_handleSystemKey",
 		"ident": 11,
-		"order": 10,
+		"order": 13,
 		"pvardefs": [
 			{
 				"name": "pSystemKey",
@@ -180,7 +213,7 @@
 	{
 		"name": "$_modifyClass",
 		"ident": 13,
-		"order": 11,
+		"order": 14,
 		"pvardefs": [
 
 		],
@@ -197,7 +230,7 @@
 	{
 		"name": "$_modifyMethods",
 		"ident": 12,
-		"order": 12,
+		"order": 15,
 		"pvardefs": [
 
 		],

@@ -7,6 +7,8 @@ Calculate ilClasses.$cols.5.$name as "SuperClass"
 
 Do ilClasses.$sort($ref.Name)
 
+Do ilClasses.$cols.$add("StrippedPathName",kCharacter,kSimplechar,100000000)
+
 Do ilClasses.$search($ref.Type=kFolder,1,0,1,1)
 Do ilClasses.$remove(kListDeleteSelected)
 

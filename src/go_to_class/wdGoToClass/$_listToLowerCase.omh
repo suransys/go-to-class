@@ -1,0 +1,3 @@
+Do $libs.$makelist($ref.$name) Returns ilLibraries
+Calculate ilLibraries.$cols.1.$name as "Name"
+Do ilLibraries.$sendall($ref.Name.$assign(low(ilLibraries.Name)))

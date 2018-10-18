@@ -1,5 +1,4 @@
 On evToTop
-	If not(isclear(ciCurrentLibraryLine))
-		Calculate ilLibraries.$line as ciCurrentLibraryLine
-	End If
+	Do $cinst.$_setSelectedLibrary()
+	
 	Queue set current field {efFilter}

@@ -1,6 +1,7 @@
 On evClick     ;; Event Parameters - pRow ( Itemreference )
+	Do $cinst.$_saveSelectedLibrary()
 	Do $cinst.$_changeLibrary()
 	
 	Redraw
 On evAfter
-	Calculate ciCurrentLibraryLine as ilLibraries.$line
+	Do $cinst.$_saveSelectedLibrary()
