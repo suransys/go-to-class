@@ -1,0 +1,17 @@
+If ilMethods.$filters.$count()=0
+	Do ilMethods.$unfilter()
+	;  Do ilMethods.$filter(rxpos("[a-z_]",ilMethods.Name,kFalse,kFalse,lnMatchLength)=0)
+Else
+	Do ilMethods.$unfilter()
+	Do ilMethods.$filter(low(ilMethods.Name)>0)
+	;  Else
+	;  Do ilMethods.$refilter()
+End If
+
+If ilMethods.$line=0&ilMethods.$linecount>0
+	Calculate ilMethods.$line as 1
+End If
+
+Do ilClasses.$merge(ilMethods,kTrue,kFalse,kTrue)
+Do ilClasses.$sendall($ref.CheckedOut.$assign(kTrue),pos('$',$ref.Name)<>1)
+Redraw

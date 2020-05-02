@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 58,
+	"internalversion": 119,
 	"designtaskname": "Startup_Task",
 	"nextident": 1033,
 	"lastgroupident": 0,
@@ -8,6 +8,13 @@
 
 	],
 	"ivardefs": [
+		{
+			"name": "ibMethodSeparatorDetected",
+			"order": 5,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
 		{
 			"name": "icFilter",
 			"order": 2,
@@ -32,6 +39,13 @@
 		{
 			"name": "ilLibraries",
 			"order": 7,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilMethods",
+			"order": 4,
 			"type": "kList",
 			"subtype": "",
 			"sublen": 0
@@ -80,7 +94,7 @@
 		"growbox": true,
 		"hasmenus": false,
 		"hasstatusbar": false,
-		"height": 311,
+		"height": 798,
 		"helpbutton": false,
 		"helpfile": 0,
 		"horzgrid": 8,
@@ -89,12 +103,12 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"keepclicks": true,
-		"left": 711,
+		"left": 746,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2018-10-16 16:07:28",
+		"moddate": "2020-05-02 22:24:56",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
@@ -112,8 +126,8 @@
 		"toolbarnames": "",
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
-		"top": 852,
-		"userinfo": "omnihissql",
+		"top": 139,
+		"userinfo": "unittest",
 		"usesheets": false,
 		"version": "20",
 		"vertgrid": 8,

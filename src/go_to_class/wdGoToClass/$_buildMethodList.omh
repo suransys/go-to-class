@@ -1,0 +1,10 @@
+
+Do $cinst.$_getLibrary().$classes.$findname(ilClasses.Name) Returns lrClass
+Do lrClass.$methods.$makelist($ref.$name) Returns ilMethods
+Calculate ilMethods.$cols.1.$name as "Name"
+Do ilMethods.$cols.$add('Type',kCharacter,kSimplechar,100000000)
+Do ilMethods.$sendall($ref.Type.$assign('method'))
+Do ilMethods.$sort($ref.Name)
+
+Calculate ilMethods.$line as 0
+Calculate ilMethods.$smartlist as kTrue

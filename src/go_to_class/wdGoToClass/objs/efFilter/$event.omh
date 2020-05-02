@@ -3,6 +3,7 @@ On evBefore     ;; Event Parameters - pRow ( Itemreference )
 On evAfter     ;; Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
 	
 On evKey
+	Calculate ibMethodSeparatorDetected as len($cobj.$contents)>1&pKey='.'
 	If pSystemKey=kUp
 		If ilClasses.$line>1
 			Calculate ilClasses.$line as ilClasses.$line-1
@@ -19,6 +20,17 @@ On evKey
 		End If
 	End If
 	
+	If pSystemKey=kRight
+		Do $cobj.$contents.$assign(ilClasses.Name)
+		Quit method kTrue
+	End If
+	
+	If pKey='.'
+		Calculate ibMethodSeparatorDetected as kTrue
+		Do $cinst.$_buildMethodList()
+	End If
+	
+	
 	If ilClasses.$line>0
 		Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
 		If lbSystemKeyHandled=kTrue
@@ -34,4 +46,9 @@ On evKey
 		Quit method
 	End If
 	
-	Do $cinst.$_filterClasses()
+	If ibMethodSeparatorDetected
+		Do $cinst.$_filterMethods()
+		;  Calculate ilClasses as ilMethods
+	Else
+		Do $cinst.$_filterClasses()
+	End If

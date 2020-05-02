@@ -41,7 +41,7 @@
 		"keyevents": false,
 		"left": 7,
 		"linestyle": 1,
-		"listheight": 5,
+		"listheight": 10,
 		"local": false,
 		"mouseevents": false,
 		"nodropcursor": 0,

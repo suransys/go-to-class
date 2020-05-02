@@ -56,13 +56,44 @@
 				"subtype": "k0dpShortnum",
 				"sublen": 0,
 				"initval": "1"
+			},
+			{
+				"name": "lrClass",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_buildMethodList",
+		"ident": 15,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "dd",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lrClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$classes",
+				"sublen": 0
 			}
 		]
 	},
 	{
 		"name": "$_listToLowerCase",
 		"ident": 10,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 
 		],
@@ -73,7 +104,7 @@
 	{
 		"name": "$_buildTypes",
 		"ident": 16,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 
 		],
@@ -84,7 +115,7 @@
 	{
 		"name": "$_changeLibrary",
 		"ident": 7,
-		"order": 6,
+		"order": 7,
 		"pvardefs": [
 
 		],
@@ -95,7 +126,7 @@
 	{
 		"name": "$_setSelectedLibrary",
 		"ident": 3,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 
 		],
@@ -106,7 +137,7 @@
 	{
 		"name": "$_saveSelectedLibrary",
 		"ident": 9,
-		"order": 8,
+		"order": 9,
 		"pvardefs": [
 
 		],
@@ -117,7 +148,7 @@
 	{
 		"name": "$_editClass",
 		"ident": 5,
-		"order": 9,
+		"order": 10,
 		"pvardefs": [
 
 		],
@@ -155,7 +186,7 @@
 	{
 		"name": "$_filterClasses",
 		"ident": 0,
-		"order": 10,
+		"order": 11,
 		"pvardefs": [
 
 		],
@@ -164,9 +195,33 @@
 		]
 	},
 	{
+		"name": "$_filterMethods",
+		"ident": 14,
+		"order": 12,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnMatchLength",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lrClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$classes",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$_getIconIDForType",
 		"ident": 8,
-		"order": 11,
+		"order": 13,
 		"pvardefs": [
 			{
 				"name": "pcType",
@@ -184,7 +239,7 @@
 	{
 		"name": "$_getLibrary",
 		"ident": 2,
-		"order": 12,
+		"order": 14,
 		"pvardefs": [
 
 		],
@@ -195,7 +250,7 @@
 	{
 		"name": "$_handleSystemKey",
 		"ident": 11,
-		"order": 13,
+		"order": 15,
 		"pvardefs": [
 			{
 				"name": "pSystemKey",
@@ -213,7 +268,7 @@
 	{
 		"name": "$_modifyClass",
 		"ident": 13,
-		"order": 14,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -230,7 +285,7 @@
 	{
 		"name": "$_modifyMethods",
 		"ident": 12,
-		"order": 15,
+		"order": 17,
 		"pvardefs": [
 
 		],
