@@ -1,4 +1,9 @@
 On evToTop
 	Do $cinst.$_setSelectedLibrary()
 	
-	Queue set current field {efFilter}
+	If not($cwind.$objs.ppTop.$objs.efFilter.$hasfocus)
+		Queue set current field {efFilter}
+	End If
+	
+On evClose
+	Do method saveWinPos

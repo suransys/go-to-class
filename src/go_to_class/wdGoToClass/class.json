@@ -1,20 +1,26 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 119,
+	"internalversion": 265,
 	"designtaskname": "Startup_Task",
-	"nextident": 1033,
+	"nextident": 1052,
 	"lastgroupident": 0,
 	"cvardefs": [
-
-	],
-	"ivardefs": [
 		{
-			"name": "ibMethodSeparatorDetected",
-			"order": 5,
-			"type": "kBoolean",
-			"subtype": 0,
+			"name": "ciWindowLeftPos",
+			"order": 2,
+			"type": "kInteger",
+			"subtype": "k32bitint",
 			"sublen": 0
 		},
+		{
+			"name": "ciWindowTopPos",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		}
+	],
+	"ivardefs": [
 		{
 			"name": "icFilter",
 			"order": 2,
@@ -28,6 +34,27 @@
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
 			"sublen": 100000000
+		},
+		{
+			"name": "icLastMethodFilter",
+			"order": 10,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "icMethodFilter",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iiKeyPressed",
+			"order": 12,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
 		},
 		{
 			"name": "ilClasses",
@@ -46,6 +73,13 @@
 		{
 			"name": "ilMethods",
 			"order": 4,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilSearchResult",
+			"order": 5,
 			"type": "kList",
 			"subtype": "",
 			"sublen": 0
@@ -71,7 +105,7 @@
 		"backcolor": "kColor3DFace",
 		"backgroundskin": 0,
 		"backgroundskinalign": "kPALtopLeft",
-		"backgroundtheme": "kBGThemeWindow",
+		"backgroundtheme": "kBGThemeNone",
 		"backpattern": 0,
 		"bringinfront": false,
 		"clickbehind": true,
@@ -94,7 +128,7 @@
 		"growbox": true,
 		"hasmenus": false,
 		"hasstatusbar": false,
-		"height": 798,
+		"height": 815,
 		"helpbutton": false,
 		"helpfile": 0,
 		"horzgrid": 8,
@@ -103,12 +137,12 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"keepclicks": true,
-		"left": 746,
+		"left": 1099,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2020-05-02 22:24:56",
+		"moddate": "2020-05-07 22:11:33",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
@@ -126,13 +160,13 @@
 		"toolbarnames": "",
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
-		"top": 139,
+		"top": 218,
 		"userinfo": "unittest",
 		"usesheets": false,
 		"version": "20",
 		"vertgrid": 8,
 		"vertscroll": false,
-		"width": 343,
+		"width": 690,
 		"zoombox": true
 	},
 	"statusbar": {

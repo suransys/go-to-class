@@ -3,7 +3,6 @@ On evBefore     ;; Event Parameters - pRow ( Itemreference )
 On evAfter     ;; Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
 	
 On evKey
-	Calculate ibMethodSeparatorDetected as len($cobj.$contents)>1&pKey='.'
 	If pSystemKey=kUp
 		If ilClasses.$line>1
 			Calculate ilClasses.$line as ilClasses.$line-1
@@ -20,35 +19,37 @@ On evKey
 		End If
 	End If
 	
-	If pSystemKey=kRight
-		Do $cobj.$contents.$assign(ilClasses.Name)
-		Quit method kTrue
-	End If
-	
-	If pKey='.'
-		Calculate ibMethodSeparatorDetected as kTrue
-		Do $cinst.$_buildMethodList()
-	End If
-	
+	Do method handleClassNavigation (pSystemKey)
 	
 	If ilClasses.$line>0
 		Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
 		If lbSystemKeyHandled=kTrue
-			Quit method
+			Quit method kTrue
 		End If
 	End If
 	
 	Process event and continue
-	
+	Calculate #S1 as pSystemKey
 	Calculate [$cobj.$dataname] as $cobj.$contents
 	
-	If [$cobj.$dataname]=icLastFilter
+	Calculate icMethodFilter as $cobj.$contents
+	Calculate icFilter as strtok(nam(icMethodFilter),".")
+	
+	If icFilter=icLastFilter&icMethodFilter=icLastMethodFilter&pos(".",$cobj.$contents)=0
+		Do ilMethods.$clear()
+		Redraw {cgMethods,ogSearchResult}
 		Quit method
 	End If
 	
-	If ibMethodSeparatorDetected
+	Do $cinst.$_filterClasses()
+	
+	If not(isclear(icMethodFilter))|pos(".",$cobj.$contents)>0
+		If ilMethods.$filters.$count()=0
+			Do $cinst.$_buildMethodList()
+		End If
 		Do $cinst.$_filterMethods()
-		;  Calculate ilClasses as ilMethods
 	Else
-		Do $cinst.$_filterClasses()
+		Calculate icLastMethodFilter as icMethodFilter
+		Do ilMethods.$merge(ilClasses,kTrue,kFalse,kTrue)
+		Redraw {cgMethods,ogSearchResult}
 	End If

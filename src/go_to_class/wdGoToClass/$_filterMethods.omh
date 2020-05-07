@@ -1,17 +1,17 @@
-If ilMethods.$filters.$count()=0
+If isclear(icMethodFilter)&not(isclear(icLastMethodFilter))
 	Do ilMethods.$unfilter()
-	;  Do ilMethods.$filter(rxpos("[a-z_]",ilMethods.Name,kFalse,kFalse,lnMatchLength)=0)
+	Calculate icMethodFilter as ""
+Else If isclear(icLastMethodFilter)&not(isclear(icMethodFilter))
+	Do ilMethods.$unfilter()
+	Do ilMethods.$filter(pos(low(icMethodFilter),low(ilMethods.Name))>0)
 Else
-	Do ilMethods.$unfilter()
-	Do ilMethods.$filter(low(ilMethods.Name)>0)
-	;  Else
-	;  Do ilMethods.$refilter()
+	Do ilMethods.$refilter()
 End If
+
+Calculate icLastMethodFilter as icMethodFilter
 
 If ilMethods.$line=0&ilMethods.$linecount>0
 	Calculate ilMethods.$line as 1
 End If
 
-Do ilClasses.$merge(ilMethods,kTrue,kFalse,kTrue)
-Do ilClasses.$sendall($ref.CheckedOut.$assign(kTrue),pos('$',$ref.Name)<>1)
-Redraw
+Redraw {cgMethods}
