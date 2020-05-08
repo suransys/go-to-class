@@ -1,4 +1,5 @@
 Calculate lcFullClassName as con($cinst.$_getLibrary().$name,".",ilClasses.Name)
+Do ilMethods.$search($ref.Name=ilClasses.Name,kTrue,kFalse,kFalse,kFalse)
 
 Switch ilMethods.Type
 	Case kFile,kQuery,kSchema,kSearch,kSystemtable

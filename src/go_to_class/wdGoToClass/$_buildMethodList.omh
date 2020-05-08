@@ -6,7 +6,9 @@ Do llMethods.$sort($ref.Name)
 
 Do llMethods.$sendall($ref.Type.$assign('method'))
 Do ilMethods.$merge(llMethods,kTrue,kFalse,kTrue)
-Do ilMethods.$cols.$addbefore(2,'Class',kCharacter,kSimplechar,100000000)
+If isnull(ilMethods.$cols.$findname('Class'))
+	Do ilMethods.$cols.$addbefore(2,'Class',kCharacter,kSimplechar,100000000)
+End If
 
 Do ilMethods.$sendall($ref.Class.$assign(ilClasses.Name))
 Do ilMethods.$sendall($ref.PathName.$assign(ilClasses.PathName))
