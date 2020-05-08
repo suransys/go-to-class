@@ -1,0 +1,3 @@
+Do $cinst.$_getLibrary().$classes.$findname(ilClasses.Name) Returns lirClass
+Do lirClass.$methods.$findname(ilMethods.Name) Returns lirMethod
+Do lirMethod.$modify()

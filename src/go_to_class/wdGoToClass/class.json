@@ -1,13 +1,33 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 58,
+	"internalversion": 284,
 	"designtaskname": "Startup_Task",
-	"nextident": 1033,
+	"nextident": 1052,
 	"lastgroupident": 0,
 	"cvardefs": [
-
+		{
+			"name": "ciWindowLeftPos",
+			"order": 2,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "ciWindowTopPos",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		}
 	],
 	"ivardefs": [
+		{
+			"name": "ibMethodSeperatorPresent",
+			"order": 11,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
 		{
 			"name": "icFilter",
 			"order": 2,
@@ -23,6 +43,27 @@
 			"sublen": 100000000
 		},
 		{
+			"name": "icLastMethodFilter",
+			"order": 10,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "icMethodFilter",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iiKeyPressed",
+			"order": 12,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
 			"name": "ilClasses",
 			"order": 1,
 			"type": "kList",
@@ -32,6 +73,20 @@
 		{
 			"name": "ilLibraries",
 			"order": 7,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilMethods",
+			"order": 4,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilSearchResult",
+			"order": 5,
 			"type": "kList",
 			"subtype": "",
 			"sublen": 0
@@ -57,7 +112,7 @@
 		"backcolor": "kColor3DFace",
 		"backgroundskin": 0,
 		"backgroundskinalign": "kPALtopLeft",
-		"backgroundtheme": "kBGThemeWindow",
+		"backgroundtheme": "kBGThemeNone",
 		"backpattern": 0,
 		"bringinfront": false,
 		"clickbehind": true,
@@ -80,7 +135,7 @@
 		"growbox": true,
 		"hasmenus": false,
 		"hasstatusbar": false,
-		"height": 311,
+		"height": 815,
 		"helpbutton": false,
 		"helpfile": 0,
 		"horzgrid": 8,
@@ -89,12 +144,12 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"keepclicks": true,
-		"left": 711,
+		"left": 1099,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2018-10-16 16:07:28",
+		"moddate": "2020-05-08 12:18:06",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
@@ -112,13 +167,13 @@
 		"toolbarnames": "",
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
-		"top": 852,
+		"top": 218,
 		"userinfo": "omnihissql",
 		"usesheets": false,
 		"version": "20",
 		"vertgrid": 8,
 		"vertscroll": false,
-		"width": 343,
+		"width": 523,
 		"zoombox": true
 	},
 	"statusbar": {

@@ -7,13 +7,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "llTypes",
-				"order": 1,
-				"type": "kList",
-				"subtype": "",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -28,41 +22,66 @@
 		]
 	},
 	{
+		"name": "saveWinPos",
+		"ident": 17,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setWinPos",
+		"ident": 18,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$_buildClassList",
 		"ident": 6,
-		"order": 3,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_buildMethodList",
+		"ident": 15,
+		"order": 7,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
 			{
-				"name": "lirColumn",
+				"name": "llMethods",
 				"order": 2,
-				"type": "kItemref",
+				"type": "kList",
 				"subtype": "",
 				"sublen": 0
 			},
 			{
-				"name": "lnCount",
+				"name": "lrClass",
 				"order": 1,
-				"type": "kInteger",
-				"subtype": "k32bitint",
+				"type": "kItemref",
+				"subtype": "$libs.lib.$classes",
 				"sublen": 0
-			},
-			{
-				"name": "lnSearchCount",
-				"order": 3,
-				"type": "kNumber",
-				"subtype": "k0dpShortnum",
-				"sublen": 0,
-				"initval": "1"
 			}
 		]
 	},
 	{
 		"name": "$_listToLowerCase",
 		"ident": 10,
-		"order": 4,
+		"order": 8,
 		"pvardefs": [
 
 		],
@@ -73,7 +92,7 @@
 	{
 		"name": "$_buildTypes",
 		"ident": 16,
-		"order": 5,
+		"order": 9,
 		"pvardefs": [
 
 		],
@@ -84,7 +103,7 @@
 	{
 		"name": "$_changeLibrary",
 		"ident": 7,
-		"order": 6,
+		"order": 10,
 		"pvardefs": [
 
 		],
@@ -95,7 +114,7 @@
 	{
 		"name": "$_setSelectedLibrary",
 		"ident": 3,
-		"order": 7,
+		"order": 11,
 		"pvardefs": [
 
 		],
@@ -106,7 +125,7 @@
 	{
 		"name": "$_saveSelectedLibrary",
 		"ident": 9,
-		"order": 8,
+		"order": 12,
 		"pvardefs": [
 
 		],
@@ -117,45 +136,29 @@
 	{
 		"name": "$_editClass",
 		"ident": 5,
-		"order": 9,
+		"order": 13,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
-			{
-				"name": "lbOK",
-				"order": 3,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0
-			},
-			{
-				"name": "lcErrorMessage",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcFullClassName",
-				"order": 4,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lirClass",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
 		"name": "$_filterClasses",
 		"ident": 0,
-		"order": 10,
+		"order": 14,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_filterMethods",
+		"ident": 14,
+		"order": 15,
 		"pvardefs": [
 
 		],
@@ -166,7 +169,7 @@
 	{
 		"name": "$_getIconIDForType",
 		"ident": 8,
-		"order": 11,
+		"order": 16,
 		"pvardefs": [
 			{
 				"name": "pcType",
@@ -184,7 +187,7 @@
 	{
 		"name": "$_getLibrary",
 		"ident": 2,
-		"order": 12,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -195,7 +198,7 @@
 	{
 		"name": "$_handleSystemKey",
 		"ident": 11,
-		"order": 13,
+		"order": 18,
 		"pvardefs": [
 			{
 				"name": "pSystemKey",
@@ -213,7 +216,7 @@
 	{
 		"name": "$_modifyClass",
 		"ident": 13,
-		"order": 14,
+		"order": 19,
 		"pvardefs": [
 
 		],
@@ -230,7 +233,7 @@
 	{
 		"name": "$_modifyMethods",
 		"ident": 12,
-		"order": 15,
+		"order": 20,
 		"pvardefs": [
 
 		],
@@ -241,6 +244,30 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$_modifyMethod",
+		"ident": 19,
+		"order": 21,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirClass",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$classes.*",
+				"sublen": 0
+			},
+			{
+				"name": "lirMethod",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "$methods.method",
+				"sublen": 0
 			}
 		]
 	}

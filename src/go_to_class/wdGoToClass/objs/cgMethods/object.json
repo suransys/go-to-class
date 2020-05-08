@@ -1,11 +1,11 @@
 {
-	"ident": 1019,
-	"order": 3,
+	"ident": 1048,
+	"order": 4,
 	"objtype": "kComplexGrid",
 	"properties": {
 		"active": true,
 		"backcolor": "kWhite",
-		"backpattern": 0,
+		"backpattern": 15,
 		"bordercolor": "kDarkGray",
 		"calculation": "",
 		"canclickvertheader": false,
@@ -15,7 +15,7 @@
 		"canresizerows": "kResizeNone",
 		"contextmenu": "",
 		"cursor": 0,
-		"dataname": "ilClasses",
+		"dataname": "ilMethods",
 		"desgroup": 0,
 		"designactive": true,
 		"deslock": false,
@@ -36,7 +36,7 @@
 		"headerfillcolor": "RGB(238,238,238)",
 		"headerheight": -1073750136,
 		"headerlinestyle": 1,
-		"height": 236,
+		"height": 740,
 		"helpfile": 0,
 		"horzheaderborder": "kBorderCtrlListCell",
 		"horzheaderfillcolor": "RGB(238,238,238)",
@@ -67,6 +67,6 @@
 		"vertheaderwidth": 20,
 		"vertscroll": true,
 		"visible": true,
-		"width": 343
+		"width": 523
 	}
 }

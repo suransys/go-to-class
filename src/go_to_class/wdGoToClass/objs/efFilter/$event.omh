@@ -3,35 +3,40 @@ On evBefore     ;; Event Parameters - pRow ( Itemreference )
 On evAfter     ;; Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
 	
 On evKey
-	If pSystemKey=kUp
-		If ilClasses.$line>1
-			Calculate ilClasses.$line as ilClasses.$line-1
-			Redraw {cgClasses}
-			Quit method kTrue
-		End If
-	End If
-	
-	If pSystemKey=kDown
-		If ilClasses.$line<ilClasses.$linecount
-			Calculate ilClasses.$line as ilClasses.$line+1
-			Redraw {cgClasses}
-			Quit method kTrue
-		End If
+	Do method handleClassNavigation (pSystemKey) Returns lbSystemKeyHandled
+	If lbSystemKeyHandled
+		Quit method kTrue
 	End If
 	
 	If ilClasses.$line>0
 		Do $cinst.$_handleSystemKey(pSystemKey) Returns lbSystemKeyHandled
 		If lbSystemKeyHandled=kTrue
-			Quit method
+			Quit method kTrue
 		End If
 	End If
 	
 	Process event and continue
 	
-	Calculate [$cobj.$dataname] as $cobj.$contents
+	Calculate ibMethodSeperatorPresent as pos(".",$cobj.$contents)>0
 	
-	If [$cobj.$dataname]=icLastFilter
+	Calculate icMethodFilter as $cobj.$contents
+	Calculate icFilter as strtok(nam(icMethodFilter),".")
+	
+	If icFilter=icLastFilter&icMethodFilter=icLastMethodFilter&not(ibMethodSeperatorPresent)
+		Do ilMethods.$clear()
+		Redraw {cgMethods}
 		Quit method
 	End If
 	
 	Do $cinst.$_filterClasses()
+	
+	If not(isclear(icMethodFilter))|ibMethodSeperatorPresent
+		If ilMethods.$filters.$count()=0
+			Do $cinst.$_buildMethodList()
+		End If
+		Do $cinst.$_filterMethods()
+	Else
+		Calculate icLastMethodFilter as icMethodFilter
+		Do ilMethods.$merge(ilClasses,kTrue,kFalse,kTrue)
+		Redraw {cgMethods}
+	End If

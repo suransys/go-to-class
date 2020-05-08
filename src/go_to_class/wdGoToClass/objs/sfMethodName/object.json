@@ -1,6 +1,6 @@
 {
-	"ident": 1028,
-	"order": 6,
+	"ident": 1051,
+	"order": 7,
 	"objtype": "kBobj",
 	"properties": {
 		"active": true,
@@ -37,10 +37,10 @@
 		"linestyle": 1,
 		"mouseevents": false,
 		"nodropcursor": 0,
-		"objlink": 17039363,
+		"objlink": 17039364,
 		"picture": {
 			"type": 14,
-			"calc": "[pick(ilClasses.CheckedOut,\"\",style(kEscBmp,1609))][ilClasses.Name]\u001B\u000180000011#[pick(isclear(ilClasses.SuperClass),con(\" -> \",ilClasses.SuperClass),\"\")]"
+			"calc": "[pick(isclear(ilMethods.Class),con(ilMethods.Class,\".\"),\"\")][ilMethods.Name]\u001B\u000100838483#[pick(isclear(ilMethods.SuperClass),con(\" -> \",ilMethods.SuperClass),\"\")]"
 		},
 		"rmouseevents": false,
 		"shape": "kText",
@@ -48,7 +48,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 14,
-			"calc": "[pick(ilClasses.CheckedOut,\"\",style(kEscBmp,1609))][ilClasses.Name]\u001B\u000180000011#[pick(isclear(ilClasses.SuperClass),con(\" -> \",ilClasses.SuperClass),\"\")]"
+			"calc": "[pick(isclear(ilMethods.Class),con(ilMethods.Class,\".\"),\"\")][ilMethods.Name]\u001B\u000100838483#[pick(isclear(ilMethods.SuperClass),con(\" -> \",ilMethods.SuperClass),\"\")]"
 		},
 		"textcolor": "kColorWindowText",
 		"tile": false,
@@ -57,6 +57,6 @@
 		"userinfo": "",
 		"vertcentertext": false,
 		"visible": true,
-		"width": 277
+		"width": 457
 	}
 }
