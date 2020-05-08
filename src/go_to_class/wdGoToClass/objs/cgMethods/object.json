@@ -1,6 +1,6 @@
 {
 	"ident": 1048,
-	"order": 8,
+	"order": 4,
 	"objtype": "kComplexGrid",
 	"properties": {
 		"active": true,
@@ -25,7 +25,7 @@
 		"dragmode": "kNoDragging",
 		"dragrange": "kRangeAll",
 		"dropmode": "kAcceptNone",
-		"edgefloat": "kEFnone",
+		"edgefloat": "kEFposnClient",
 		"effect": "kBorderCtrlList",
 		"enabled": true,
 		"enterable": false,
@@ -44,7 +44,7 @@
 		"horzheaderlinestyle": 1,
 		"horzscroll": false,
 		"keyevents": true,
-		"left": 346,
+		"left": 0,
 		"mouseevents": false,
 		"multipleselect": false,
 		"nodropcursor": 0,
@@ -67,6 +67,6 @@
 		"vertheaderwidth": 20,
 		"vertscroll": true,
 		"visible": true,
-		"width": 343
+		"width": 523
 	}
 }

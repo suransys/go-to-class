@@ -1,6 +1,6 @@
 {
 	"ident": 1017,
-	"order": 7,
+	"order": 3,
 	"objtype": "kPagedPane",
 	"properties": {
 		"active": true,
@@ -42,7 +42,7 @@
 		"userinfo": "",
 		"vertscroll": false,
 		"visible": true,
-		"width": 690
+		"width": 523
 	},
 	"multivalueproperties": {
 		"properties": [

@@ -7,13 +7,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "llTypes",
-				"order": 1,
-				"type": "kList",
-				"subtype": "",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -57,35 +51,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "lirColumn",
-				"order": 2,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			},
-			{
-				"name": "lnCount",
-				"order": 1,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0
-			},
-			{
-				"name": "lnSearchCount",
-				"order": 3,
-				"type": "kNumber",
-				"subtype": "k0dpShortnum",
-				"sublen": 0,
-				"initval": "1"
-			},
-			{
-				"name": "lrClass",
-				"order": 4,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -175,34 +141,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "lbOK",
-				"order": 3,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0
-			},
-			{
-				"name": "lcErrorMessage",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcFullClassName",
-				"order": 4,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lirClass",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -224,27 +163,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "lcFilter",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lnMatchLength",
-				"order": 2,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0
-			},
-			{
-				"name": "lrClass",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "$libs.lib.$classes",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -336,13 +255,6 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "lcFullClassName",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
 			{
 				"name": "lirClass",
 				"order": 2,

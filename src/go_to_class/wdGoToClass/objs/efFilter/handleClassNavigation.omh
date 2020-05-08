@@ -1,22 +1,16 @@
 If pSystemKey=kUp
-	If ilClasses.$line>1
-		Calculate ilClasses.$line as ilClasses.$line-1
-		Redraw {cgClasses}
-		Quit method kTrue
+	If ilMethods.$line>1
+		Calculate ilMethods.$line as ilMethods.$line-1
+		Redraw {cgMethods}
 	End If
+	Quit method kTrue
 End If
 
 If pSystemKey=kDown
-	If ilClasses.$line<ilClasses.$linecount
-		Calculate ilClasses.$line as ilClasses.$line+1
-		Redraw {cgClasses}
-		Quit method kTrue
+	If ilMethods.$line<ilMethods.$linecount
+		Calculate ilMethods.$line as ilMethods.$line+1
+		Redraw {cgMethods}
+	Else
 	End If
-End If
-
-If pSystemKey=kTabKey
-	If isclear(ilMethods)&ilClasses.$linecount>0
-		Calculate $cobj.$contents as ilClasses.Name
-		Redraw {efFilter}
-	End If
+	Quit method kTrue
 End If

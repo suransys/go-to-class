@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 265,
+	"internalversion": 284,
 	"designtaskname": "Startup_Task",
 	"nextident": 1052,
 	"lastgroupident": 0,
@@ -21,6 +21,13 @@
 		}
 	],
 	"ivardefs": [
+		{
+			"name": "ibMethodSeperatorPresent",
+			"order": 11,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
 		{
 			"name": "icFilter",
 			"order": 2,
@@ -142,7 +149,7 @@
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2020-05-07 22:11:33",
+		"moddate": "2020-05-08 12:18:06",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
@@ -161,12 +168,12 @@
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
 		"top": 218,
-		"userinfo": "unittest",
+		"userinfo": "omnihissql",
 		"usesheets": false,
 		"version": "20",
 		"vertgrid": 8,
 		"vertscroll": false,
-		"width": 690,
+		"width": 523,
 		"zoombox": true
 	},
 	"statusbar": {

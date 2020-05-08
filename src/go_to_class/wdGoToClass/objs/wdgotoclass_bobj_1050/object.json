@@ -1,6 +1,6 @@
 {
 	"ident": 1050,
-	"order": 10,
+	"order": 6,
 	"objtype": "kBobj",
 	"properties": {
 		"active": true,
@@ -37,7 +37,7 @@
 		"linestyle": 1,
 		"mouseevents": false,
 		"nodropcursor": 0,
-		"objlink": 17039368,
+		"objlink": 17039364,
 		"picture": {
 			"type": 14,
 			"calc": "[style(kEscBmp,$cinst.$_getIconIDForType(ilMethods.Type))]"
