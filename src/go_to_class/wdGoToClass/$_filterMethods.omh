@@ -1,0 +1,17 @@
+If isclear(icMethodFilter)&not(isclear(icLastMethodFilter))
+	Do ilMethods.$unfilter()
+	Calculate icMethodFilter as ""
+Else If isclear(icLastMethodFilter)&not(isclear(icMethodFilter))
+	Do ilMethods.$unfilter()
+	Do ilMethods.$filter(pos(low(icMethodFilter),low(ilMethods.Name))>0)
+Else
+	Do ilMethods.$refilter()
+End If
+
+Calculate icLastMethodFilter as icMethodFilter
+
+If ilMethods.$line=0&ilMethods.$linecount>0
+	Calculate ilMethods.$line as 1
+End If
+
+Redraw {cgMethods}

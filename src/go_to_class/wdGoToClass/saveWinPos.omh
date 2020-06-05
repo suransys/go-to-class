@@ -1,0 +1,2 @@
+Calculate ciWindowTopPos as $cwind.$top
+Calculate ciWindowLeftPos as $cwind.$left

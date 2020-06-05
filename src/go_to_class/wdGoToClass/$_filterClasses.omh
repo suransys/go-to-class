@@ -15,4 +15,4 @@ If ilClasses.$line=0&ilClasses.$linecount>0
 	Calculate ilClasses.$line as 1
 End If
 
-Redraw
+Redraw {cgMethods}

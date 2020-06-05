@@ -1,7 +1,11 @@
 Calculate lcFullClassName as con($cinst.$_getLibrary().$name,".",ilClasses.Name)
+Do ilMethods.$search($ref.Name=ilClasses.Name,kTrue,kFalse,kFalse,kFalse)
 
-If ilClasses.Type=kFile|ilClasses.Type=kQuery|ilClasses.Type=kSchema|ilClasses.Type=kSearch|ilClasses.Type=kSystemtable
-	Modify class {[lcFullClassName]}
-Else
-	Modify methods {[lcFullClassName]}
-End If
+Switch ilMethods.Type
+	Case kFile,kQuery,kSchema,kSearch,kSystemtable
+		Modify class {[lcFullClassName]}
+	Case "method"
+		Do $cinst.$_modifyMethod()
+	Default
+		Modify methods {[lcFullClassName]}
+End Switch

@@ -1,5 +1,7 @@
 Do inherited
 
+Do method setWinPos
+
 Do $cinst.$_buildTypes()
 
 Do $cinst.$_listToLowerCase()
@@ -11,3 +13,5 @@ Do ilLibraries.$remove(0)
 Do $cinst.$_setSelectedLibrary()
 
 Do $cinst.$_buildClassList()
+
+Do ilMethods.$copydefinition(ilClasses)

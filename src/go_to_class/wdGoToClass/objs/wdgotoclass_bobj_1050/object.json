@@ -1,6 +1,6 @@
 {
-	"ident": 1025,
-	"order": 5,
+	"ident": 1050,
+	"order": 6,
 	"objtype": "kBobj",
 	"properties": {
 		"active": true,
@@ -37,10 +37,10 @@
 		"linestyle": 1,
 		"mouseevents": false,
 		"nodropcursor": 0,
-		"objlink": 17039363,
+		"objlink": 17039364,
 		"picture": {
 			"type": 14,
-			"calc": "[style(kEscBmp,$cinst.$_getIconIDForType(ilClasses.Type))]"
+			"calc": "[style(kEscBmp,$cinst.$_getIconIDForType(ilMethods.Type))]"
 		},
 		"rmouseevents": false,
 		"shape": "kText",
@@ -48,7 +48,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 14,
-			"calc": "[style(kEscBmp,$cinst.$_getIconIDForType(ilClasses.Type))]"
+			"calc": "[style(kEscBmp,$cinst.$_getIconIDForType(ilMethods.Type))]"
 		},
 		"textcolor": "kColorWindowText",
 		"tile": false,
